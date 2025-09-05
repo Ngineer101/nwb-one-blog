@@ -11,6 +11,11 @@ module.exports = withBundleAnalyzer({
   async redirects() {
     return [
       {
+        source: '/',
+        destination: 'https://minimalizt.dev/',
+        permanent: true,
+      },
+      {
         source: '/blog',
         destination: 'https://minimalizt.dev/blog/',
         permanent: true,
@@ -18,6 +23,16 @@ module.exports = withBundleAnalyzer({
       {
         source: '/about',
         destination: 'https://minimalizt.dev/about/',
+        permanent: true,
+      },
+      {
+        source: '/projects',
+        destination: 'https://minimalizt.dev/about/',
+        permanent: true,
+      },
+      {
+        source: '/tags',
+        destination: 'https://minimalizt.dev/blog/',
         permanent: true,
       },
       {
