@@ -11,6 +11,21 @@ module.exports = withBundleAnalyzer({
   async redirects() {
     return [
       {
+        source: '/blog',
+        destination: 'https://minimalizt.dev/blog/',
+        permanent: true,
+      },
+      {
+        source: '/about',
+        destination: 'https://minimalizt.dev/about/',
+        permanent: true,
+      },
+      {
+        source: '/sitemap.xml',
+        destination: 'https://minimalizt.dev/sitemap-0.xml',
+        permanent: true,
+      },
+      {
         source: '/blog/auditing-dotnet-entity-framework-core',
         destination: 'https://minimalizt.dev/blog/auditing-dotnet-entity-framework-core/',
         permanent: true,
